@@ -1,0 +1,2 @@
+"use strict";var overlay=$("#hamburgerOverlay"),menu=$("#hamburgerMenu"),body=$("body"),link=$(".nav-main__link"),classes=["open","active","hidden"],elements=[menu,overlay,body],_toggleClass=function(e,t){return e.forEach(function(e,n){return $(e).toggleClass(t[n])})};$(menu).on("click",function(e){e.preventDefault(),_toggleClass(elements,classes)}),$(link).on("click",function(e){e.preventDefault();var n=$(this).attr("href");"#"!==n&&$("html").animate({scrollTop:$(n).offset().top},600,function(){_toggleClass(elements,classes)})});
+//# sourceMappingURL=fullMenu-jQuery.js.map
