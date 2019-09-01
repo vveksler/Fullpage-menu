@@ -1,0 +1,35 @@
+.nav-main {
+  display: flex;
+  margin-top: 5px;
+}
+
+.nav-main__list {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+.nav-main__item {
+  margin-left: 27px;
+
+  &.active {
+    .nav-main__link {
+      color: lighten($color: $green, $amount: 20%);
+    }
+  }
+}
+
+.nav-main__item:first-child {
+  margin-left: 0;
+}
+
+.nav-main__link {
+  font-size: 18px;
+  color: #ffffff;
+  transition: 0.5s;
+
+  &:hover {
+    color: darken(#fff, 10%);
+  }
+}

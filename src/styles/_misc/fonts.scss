@@ -1,0 +1,68 @@
+$font-map: (
+  Black: (
+    900,
+    normal
+  ),
+  BlackItalic: (
+    900,
+    italic
+  ),
+  ExtraBold: (
+    800,
+    normal
+  ),
+  ExtraBoldItalic: (
+    800,
+    italic
+  ),
+  Bold: (
+    700,
+    normal
+  ),
+  BoldItalic: (
+    700,
+    italic
+  ),
+  Medium: (
+    500,
+    normal
+  ),
+  MediumItalic: (
+    500,
+    italic
+  ),
+  Regular: (
+    normal,
+    normal
+  ),
+  Italic: (
+    normal,
+    italic
+  ),
+  Light: (
+    300,
+    normal
+  ),
+  LightItalic: (
+    300,
+    italic
+  ),
+  Thin: (
+    100,
+    normal
+  ),
+  ThinItalic: (
+    100,
+    italic
+  )
+);
+
+@each $font, $font-options in $font-map {
+  @font-face {
+    font-family: "Alegreya Sans";
+    src: url("../fonts/subset-AlegreyaSans-#{$font}.woff2") format("woff2"),
+      url("../fonts/subset-AlegreyaSans-#{$font}.woff") format("woff");
+    font-weight: nth($font-options, 1);
+    font-style: nth($font-options, 2);
+  }
+}

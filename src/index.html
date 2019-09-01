@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Full menu demo</title>
+    <link rel="stylesheet" href="styles/main.min.css" />
+    <!-- <script src="scripts/fullMenu-AnonymFunction.js" defer></script> -->
+    <!-- <script src="scripts/fullMenu-pureJS.js" defer></script> -->
+    <!-- <script src="scripts/fullMenu-pureJS-2.js" defer></script> -->
+    <script src="scripts/fullMenu-jQuery.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="section hero" id="hero">
+        <h2 class="title">First section</h2>
+      </section>
+      <section class="section slider" id="slider-animate">
+        <h2 class="title">Second section</h2>
+        <!--...-->
+      </section>
+      <section class="section slider" id="slider-vanillaJS">
+        <h2 class="title">Third section</h2>
+        <!--...-->
+      </section>
+      <section class="section slideshow" id="slideshow">
+        <h2 class="title">Fourth section</h2>
+        <!--...-->
+      </section>
+      <section class="section modal" id="modal">
+        <h2 class="title">Fifth section</h2>
+        <!--...-->
+      </section>
+      <section class="section order-form" id="form">
+        <h2 class="title">Sixth section</h2>
+        <!--...-->
+      </section>
+    </div>
+    <!--NAV FIXED MENU-->
+    <nav class="nav-fixed">
+      <ul class="nav-fixed__list"></ul>
+    </nav>
+    <!--HAMBURGER MENU-->
+    <a href="$" class="hamburger-menu-link" id="hamburgerMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <!--OVERLAY-->
+    <div class="hamburger-overlay" id="hamburgerOverlay">
+      <nav class="nav-main">
+        <ul class="nav-main__list">
+          <li class="nav-main__item">
+            <a href="#hero" class="nav-main__link">Главная</a>
+          </li>
+          <li class="nav-main__item">
+            <a href="#slider-animate" class="nav-main__link">Слайдер с animate
+              css</a>
+          </li>
+          <li class="nav-main__item">
+            <a href="#slideshow" class="nav-main__link">Слайдшоу с точками</a>
+          </li>
+          <li class="nav-main__item">
+            <a href="#slider-vanillaJS" class="nav-main__link">Слайдер на
+              JavaScript</a>
+          </li>
+          <li class="nav-main__item">
+            <a href="#modal" class="nav-main__link">Модальное окно</a>
+          </li>
+          <li class="nav-main__item">
+            <a href="#form" class="nav-main__link">Пример формы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>
